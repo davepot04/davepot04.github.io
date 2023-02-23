@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<root>
+	<create>CREATE TABLE books(id INTEGER PRIMARY KEY, book_title TEXT, book_description TEXT)</create>
+	<open>SELECT * FROM books</open>
+	<add>INSERT INTO books(book_title, book_description) VALUES(?, ?)</add>
+	<update>UPDATE books SET book_title = ?, book_description = ? WHERE id = ?</update>
+	<delete>DELETE FROM books WHERE id = ?</delete>
+</root>
